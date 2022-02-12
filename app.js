@@ -1,9 +1,10 @@
 const message = document.querySelector('.messages')
-const item1 = document.querySelector('.item1')
-const item2 = document.querySelector('.item2')
-const item3 = document.querySelector('.item3')
+const firstNumber = document.querySelector('.item1')
+const secondNumber = document.querySelector('.item2')
+const thirdNumber = document.querySelector('.item3')
+console.log(firstNumber);
 const playButton = document.querySelector('.play_button')
-
+console.log(playButton);
 playButton.addEventListener('click',()=>{
   //picking the math.randome element
   let randomNumber = math.floor(Math.random()*4) + 1;
@@ -14,6 +15,10 @@ playButton.addEventListener('click',()=>{
   let secondNumber = item2.innerHTML = `${randomNumber2}`;
   let thirdNumber = item3.innerHTML = `${randomNumber3}`;
   let lose = 'you have lost';
-  let win = 'you have win!';
-
+  let win = 'you have won!';
+  if(firstNumber === secondNumber && firstNumber === thirdNumber){
+    return `${win}` 
+  } else {
+    return `${lose}`
+  }
 })
