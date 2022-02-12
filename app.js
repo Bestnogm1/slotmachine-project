@@ -1,0 +1,1 @@
+const item1 = document.querySelector('.item1')
