@@ -1,28 +1,32 @@
 const message = document.querySelector('.messages')
-const firstNumber =document.querySelector('.item1')
-const secondNumber =document.querySelector('.item2')
-const thirdNumber = document.querySelector('.item3')
-console.log(firstNumber);
-let playButton = document.querySelector('.play_button' )
-console.log(playButton);
+const item1 = document.querySelector('.item1')
+const item2 = document.querySelector('.item2')
+const item3 = document.querySelector('.item3')
+const playButton = document.querySelector('.play_button')
 
-playButton.addEventListener('click',function(){
+function ranNumber(){
+   return  Math.floor(Math.random()*4) + 1 
+    
+} 
+
+playButton.addEventListener('click',()=>{
   //picking the math.randome element
-  let randomNumber = Math.floor(Math.random()*4) + 1;
-  let randomNumber2 = Math.floor(Math.random()*4) + 1;
-  let randomNumber3 = Math.floor(Math.random()*4) + 1;
-  //this random number picks a number bettewn 1 and4 
-  let firstNumber1 = firstNumber.innerHTML = `${randomNumber}`;
-
-  let secondNumber2 = secondNumber.innerHTML = `${randomNumber2}`;
-
-  let thirdNumber3 = thirdNumber.innerHTML = `${randomNumber3}`;
+  let randomNumber = ranNumber()
+  let randomNumber2 = Math.floor(Math.random()*4) + 1
+  let randomNumber3 = Math.floor(Math.random()*4) + 1
+  //This random number picks a number bettewn 1 and4 
+  let firstNumber = item1.innerHTML = `${randomNumber}`
+  let secondNumber = item2.innerHTML = `${randomNumber2}`
+  let thirdNumber = item3.innerHTML = `${randomNumber3}`
 
   let lose = 'you have lost';
   let win = 'you have won!';
-  if(firstNumber1 === secondNumber2 && firstNumber1 === thirdNumber3){
+  if(firstNumber === secondNumber && firstNumber === thirdNumber){
+
     message.innerHTML=`${win}` 
   } else {
-    message.innerHTML =`${lose}`
-  }
+    
+    message.innerHTML =`${lose}`}
+
+
 })
