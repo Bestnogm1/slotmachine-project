@@ -18,23 +18,21 @@ body {
 .first{
   /* outside */
 
-position: absolute;
-width: 1058px;
-height: 404px;
-
-background: #513E87;
-border: 1px solid rgba(0, 0, 0, 0.2);
-box-sizing: border-box;
-border-radius: 176px;
-
+  position: absolute;
+  width: 1058px;
+  height: 404px;
+  background: #513E87;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 176px;
   background-color: grey;
   gap: 70px;  
   display: grid;
   grid-template-rows: auto;
   grid-template-areas: 
-    "header header header "
-    "item1  item2  item3"
-    "play_Button play_Button play_Button";
+    "header header header slider "
+    "item1  item2  item3 slider"
+    "play_Button play_Button play_Button slider";
 }
 .item1{
   grid-area: item1;
@@ -101,6 +99,25 @@ background: #0D16FF;
   margin-top: center;
   margin-left: center;
 }
+
+.slider{
+  grid-area: slider;
+
+  position: relative;
+  width: 40px;
+  height: 404px;
+  background: #FFFFFF; 
+}
+position: absolute;
+width: 40px;
+height: 23px;
+left: 0px;
+top: 0px;
+
+background: #3CE661;
+
+
+/* scroller */
 
 
 
