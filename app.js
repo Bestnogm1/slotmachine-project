@@ -15,11 +15,11 @@ playButton.addEventListener('click',()=>{
   let randomNumber2 = ranNumber()
   let randomNumber3 = ranNumber()
   
-  let firstNumber = setTimeout(()=>{item1.innerHTML = `${randomNumber}`},1000);
+  let firstNumber = setTimeout(()=>{item1.innerHTML = `${randomNumber}`},500);
   
   let secondNumber = setTimeout(()=>{item2.innerHTML = `${randomNumber2}`},1000);
   
-  let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},1000);
+  let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},1500);
   
   let lose = 'you have lost';
   let win = 'you have won!';
@@ -30,5 +30,5 @@ playButton.addEventListener('click',()=>{
  } 
  else if(randomNumber !== randomNumber2 && randomNumber !== randomNumber3) {
 console.log('lost')
-    setTimeout(()=>{ message.innerHTML =`${lose}`} , 1600) }
+    setTimeout(()=>{ message.innerHTML =`${lose}`} , 1000) }
 })
