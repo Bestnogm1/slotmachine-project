@@ -27,8 +27,7 @@ playButton.addEventListener('click',()=>{
   console.log(typeof firstNumber, typeof secondNumber, typeof thirdNumber);
   if(randomNumber === randomNumber2 && randomNumber === randomNumber3){
   setTimeout(()=>{ message.innerHTML=`${win}` }, 1600)  
- } 
- else if(randomNumber !== randomNumber2 && randomNumber !== randomNumber3) {
-console.log('lost')
+  } 
+  else if(randomNumber !== randomNumber2 && randomNumber !== randomNumber3) {
     setTimeout(()=>{ message.innerHTML =`${lose}`} , 1000) }
 })
