@@ -1,122 +1,40 @@
-html {
-  box-sizing: border-box
-}
-*,
-*::before, 
-*::after { 
-  box-sizing: inherit;
-}
-:root {
-  font-size: 62.5%
-}
-body {
-  background-color: white;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  justify-content: center;  
+body{
+  background-color: rgb(255, 126, 126);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .first{
-  /* outside */
-  position: absolute;
-  width: 1058px;
-  height: 404px;
-  background: #513E87;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  border-radius: 176px;
   background-color: grey;
-  gap: 70px;  
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header slider "
-    "item1  item2  item3 slider"
-    "play_Button play_Button play_Button slider";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150vh;
+  min-height: 60vh;
+  border-radius: 50px;
+}
+.item1 , .item2, .item3{
+  min-height: 35vh;
+  min-width: 35vh;
+  border-radius: 15px;
 }
 .item1{
-  grid-area: item1;
-  display: flex;
-  justify-content: center;
-  background-color: red;
-  margin-top: center;
-  margin-left: center;
-  /* Frame 4 */
-  position: relative;
-  width: 181px;
-  height: 134px;
-  background: #DB00FF;
-
+  background-color: blue;
+  margin-left: 5vh;
 }
 .item2{
-  grid-area: item2;
-  display: flex;
-  justify-content: center;
   background-color: red;
-  margin-top: center;
-  margin-left: center;
-  /* Rectangle 4 */
-  position: absolute;
-  width: 189px;
-  height: 133px;
-  background: #EF4B4B;
-
 }
 .item3{
-  grid-area: item3;
-  display: flex;
-  justify-content: center;
-  background-color: red;
-  margin-top: center;
-  margin-left: center;
-  /* Frame 3 */
-  position: relative;
-  width: 177px;
-  height: 133px;
-  background: #0D16FF;
+  background-color: yellow;
 }
-.item1 .item2 .item3{
-  display:flex;
-  
-  justify-self: center;
-
+.silder{
+  min-height:60vh;
+  min-width: 5vh;
+  background-color: white;
+  margin-right: 10vh;
+  border-end-end-radius: 30px;
+  border-top-right-radius: 30px;
 }
-
-.play_Button{
-  grid-area: play_Button;
-  display: flex;
-  justify-content: center;
-  background-color: red;
-  margin-top: center;
-  margin-left: center;
-}
-.messages{
-  grid-area: header;
-  display: flex;
-  justify-content: center;
-  background-color: red;
-  margin-top: center;
-  margin-left: 150px;
-}
-
-.slider{
-  grid-area: slider;
-  position: relative;
-  width: 40px;
-  height: 404px;
-  background: #FFFFFF; 
-}
-.slider-button {
-  position: absolute;
-  width: 40px;
-  height: 23px;
-  left: 0px;
-  top: 0px;
-  background: #3CE661;
-
-}
-
-
-/* scroller */
-
 
 
