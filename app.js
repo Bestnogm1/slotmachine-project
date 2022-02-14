@@ -14,13 +14,18 @@ playButton.addEventListener('click',()=>{
   let randomNumber = ranNumber()
   let randomNumber2 = ranNumber()
   let randomNumber3 = ranNumber()
+  
   let firstNumber = setTimeout(()=>{item1.innerHTML = `${randomNumber}`},1000);
-  let secondNumber = setTimeout(()=>{item2.innerHTML = `${randomNumber2}`},2000)
-  let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},3000) 
+  
+  let secondNumber = setTimeout(()=>{item2.innerHTML = `${randomNumber2}`},2000);
+  
+  let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},3000);
+  
   let lose = 'you have lost';
   let win = 'you have won!';
+  
   if(firstNumber === secondNumber && firstNumber === thirdNumber){
     setTimeout(()=>{ message.innerHTML=`${win}` }, 3000)  
-  } else {
-    setTimeout(()=>{ message.innerHTML =`${lose}`} , 3500) }
+  } if (firstNumber !== secondNumber && firstNumber !== thirdNumber) {
+    setTimeout(()=>{ message.innerHTML =`${lose}`} , 4000) }
 })
