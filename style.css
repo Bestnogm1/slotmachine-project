@@ -17,7 +17,6 @@ body {
 }
 .first{
   /* outside */
-
   position: absolute;
   width: 1058px;
   height: 404px;
@@ -42,12 +41,10 @@ body {
   margin-top: center;
   margin-left: center;
   /* Frame 4 */
-
-position: relative;
-width: 181px;
-height: 134px;
-
-background: #DB00FF;
+  position: relative;
+  width: 181px;
+  height: 134px;
+  background: #DB00FF;
 
 }
 .item2{
@@ -58,12 +55,10 @@ background: #DB00FF;
   margin-top: center;
   margin-left: center;
   /* Rectangle 4 */
-
-position: absolute;
-width: 189px;
-height: 133px;
-
-background: #EF4B4B;
+  position: absolute;
+  width: 189px;
+  height: 133px;
+  background: #EF4B4B;
 
 }
 .item3{
@@ -74,15 +69,18 @@ background: #EF4B4B;
   margin-top: center;
   margin-left: center;
   /* Frame 3 */
-
-position: relative;
-width: 177px;
-height: 133px;
-
-background: #0D16FF;
-
+  position: relative;
+  width: 177px;
+  height: 133px;
+  background: #0D16FF;
+}
+.item1 .item2 .item3{
+  display:flex;
+  
+  justify-self: center;
 
 }
+
 .play_Button{
   grid-area: play_Button;
   display: flex;
@@ -97,24 +95,25 @@ background: #0D16FF;
   justify-content: center;
   background-color: red;
   margin-top: center;
-  margin-left: center;
+  margin-left: 150px;
 }
 
 .slider{
   grid-area: slider;
-
   position: relative;
   width: 40px;
   height: 404px;
   background: #FFFFFF; 
 }
-position: absolute;
-width: 40px;
-height: 23px;
-left: 0px;
-top: 0px;
+.slider-button {
+  position: absolute;
+  width: 40px;
+  height: 23px;
+  left: 0px;
+  top: 0px;
+  background: #3CE661;
 
-background: #3CE661;
+}
 
 
 /* scroller */
