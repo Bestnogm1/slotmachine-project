@@ -1,75 +1,92 @@
 html {
   box-sizing: border-box
 }
-
-/* The Universal Selector */
-*, /* All elements*/
-*::before, /* All ::before pseudo-elements */
-*::after { /* All ::after pseudo-elements */
-  /* height & width will now include border & padding by default
-   but can be over-ridden as needed */
+*,
+*::before, 
+*::after { 
   box-sizing: inherit;
 }
-
-/* resets font size to be 62.5% of the user preference - 
-   in most browser configurations this will be 10px */
 :root {
   font-size: 62.5%
 }
-
-
 body {
-  background-color: grey;
-  display: grid;
-  grid-template-columns: 10% 40% 40%;
-  grid-template-rows: auto 1fr auto;
-  gap: 5px;  /* specifies width of the grid's lines */
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-    justify-content: center;  
-}
-.first{
   background-color: white;
   display: grid;
-  grid-template-columns: 10% 40% 40%;
   grid-template-rows: auto 1fr auto;
+  justify-content: center;  
+}
+.first{
+  /* outside */
+
+position: absolute;
+width: 1058px;
+height: 404px;
+
+background: #513E87;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+border-radius: 176px;
+
+  background-color: grey;
   gap: 70px;  
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  justify-content: center;
   grid-template-rows: auto;
   grid-template-areas: 
     "header header header "
-    "wow  main  sidebar"
-    "footer footer footer ";
+    "item1  item2  item3"
+    "play_Button play_Button play_Button";
 }
 .item1{
-  grid-area: wow;
+  grid-area: item1;
   display: flex;
   justify-content: center;
   background-color: red;
   margin-top: center;
   margin-left: center;
+  /* Frame 4 */
+
+position: relative;
+width: 181px;
+height: 134px;
+
+background: #DB00FF;
+
 }
 .item2{
-  grid-area: main;
+  grid-area: item2;
   display: flex;
   justify-content: center;
   background-color: red;
   margin-top: center;
   margin-left: center;
+  /* Rectangle 4 */
+
+position: absolute;
+width: 189px;
+height: 133px;
+
+background: #EF4B4B;
+
 }
 .item3{
-  grid-area: sidebar;
+  grid-area: item3;
   display: flex;
   justify-content: center;
   background-color: red;
   margin-top: center;
   margin-left: center;
+  /* Frame 3 */
+
+position: relative;
+width: 177px;
+height: 133px;
+
+background: #0D16FF;
+
 
 }
 .play_Button{
-  grid-area: footer;
+  grid-area: play_Button;
   display: flex;
   justify-content: center;
   background-color: red;
@@ -84,4 +101,6 @@ body {
   margin-top: center;
   margin-left: center;
 }
+
+
 

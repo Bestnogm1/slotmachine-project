@@ -6,7 +6,7 @@ const playButton = document.querySelector('.play_button')
 
 function ranNumber(){
   //This random number picks a number bettewn 1 and4 
-  return  Math.floor(Math.random()*2) + 1 
+  return  Math.floor(Math.random()*4) + 1 
 } 
 
 playButton.addEventListener('click',()=>{
@@ -24,10 +24,9 @@ playButton.addEventListener('click',()=>{
   let lose = 'you have lost';
   let win = 'you have won!';
   
-  console.log(typeof firstNumber, typeof secondNumber, typeof thirdNumber);
   if(randomNumber === randomNumber2 && randomNumber === randomNumber3){
   setTimeout(()=>{ message.innerHTML=`${win}` }, 1600)  
   } 
   else if(randomNumber !== randomNumber2 && randomNumber !== randomNumber3) {
-    setTimeout(()=>{ message.innerHTML =`${lose}`} , 1000) }
+    setTimeout(()=>{ message.innerHTML =`${lose}`} , 1600) }
 })
