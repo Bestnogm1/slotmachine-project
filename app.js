@@ -6,7 +6,7 @@ const playButton = document.querySelector('.play_button')
 
 function ranNumber(){
   //This random number picks a number bettewn 1 and4 
-  return  Math.floor(Math.random()*4) + 1 
+  return  Math.floor(Math.random()*2) + 1 
 } 
 
 playButton.addEventListener('click',()=>{
@@ -17,15 +17,18 @@ playButton.addEventListener('click',()=>{
   
   let firstNumber = setTimeout(()=>{item1.innerHTML = `${randomNumber}`},1000);
   
-  let secondNumber = setTimeout(()=>{item2.innerHTML = `${randomNumber2}`},2000);
+  let secondNumber = setTimeout(()=>{item2.innerHTML = `${randomNumber2}`},1000);
   
-  let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},3000);
+  let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},1000);
   
   let lose = 'you have lost';
   let win = 'you have won!';
   
-  if(firstNumber === secondNumber && firstNumber === thirdNumber){
-    setTimeout(()=>{ message.innerHTML=`${win}` }, 3000)  
-  } if (firstNumber !== secondNumber && firstNumber !== thirdNumber) {
-    setTimeout(()=>{ message.innerHTML =`${lose}`} , 4000) }
+  console.log(typeof firstNumber, typeof secondNumber, typeof thirdNumber);
+  if(randomNumber === randomNumber2 && randomNumber === randomNumber3){
+  setTimeout(()=>{ message.innerHTML=`${win}` }, 1600)  
+ } 
+ else if(randomNumber !== randomNumber2 && randomNumber !== randomNumber3) {
+console.log('lost')
+    setTimeout(()=>{ message.innerHTML =`${lose}`} , 1600) }
 })
