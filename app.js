@@ -25,8 +25,8 @@ playButton.addEventListener('click',()=>{
   let win = 'you have won!';
   
   if(randomNumber === randomNumber2 && randomNumber === randomNumber3){
-  setTimeout(()=>{ message.innerHTML=`${win}` }, 1600)  
+  setTimeout(()=>{ message.innerHTML= 'you won' }, 1600)  
   } 
-  else if(randomNumber !== randomNumber2 && randomNumber !== randomNumber3) {
-    setTimeout(()=>{ message.innerHTML =`${lose}`} , 1600) }
+  else if(randomNumber !== randomNumber2 || randomNumber !== randomNumber3) {
+    setTimeout(()=>{ message.innerHTML ='you lost'} , 1600) }
 })
