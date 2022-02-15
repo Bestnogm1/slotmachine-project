@@ -1,39 +1,32 @@
-body{
+  body{
   background-color: rgb(255, 126, 126);
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  min-height: 100vh;
+} 
 .first{
+  
   background-color: grey;
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
-  width: 150vh;
-  min-height: 60vh;
+  width: 100vh;
+  min-height: 10vh;
   border-radius: 50px;
 }
 .item1 , .item2, .item3{
   display: flex;
-  min-height: 16vh;
+  min-height: 1vh;
   min-width: 15vh;
   border-radius: 15px;
   align-items: baseline;
   font-size: 200px ;
+  margin: 0 auto;
+  
 }
-.item1{
 
-  margin-left: 5vh;
-  text-align: center;
-}
-.item2{
-
-  text-align: center;
-}
-.item3{
-
-  text-align: center;
-}
 .silder{
   min-height:60vh;
   min-width: 5vh;
@@ -44,3 +37,23 @@ body{
 }
 
 
+
+.first{
+  
+  background-color: grey;
+  display: grid;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100vh;
+  min-height: 55vh;
+  grid-template-columns: 50px 50px 50px ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+}  
+.messages{
+
+  font-size:56
+}
