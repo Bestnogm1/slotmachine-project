@@ -40,12 +40,13 @@ It was originally 7 years before  after the first coding languages and no they d
 Picture:
 
 
-For this project I use HTML  CSS  and JavaScript
-and for Deplyment I used netlify
+For this project I use
+ HTML  CSS  and JavaScript
+and for the Deployment I used netlify
 
 
-
+game link
 Link	[SlotMachine](https://hopeful-bell-3d058f.netlify.app/)
  
 
-In the future i plan to add a levere system to it so when its clicked of pulled it will then cosue the machine to spin and more animation to have a sp
+In the future I plan to add a levere system to it so when its clicked of pulled it will then cosue the machine to spin and more animation to have a spin
