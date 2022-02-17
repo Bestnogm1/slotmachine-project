@@ -1,59 +1,110 @@
-  body{
-  background-color: rgb(255, 126, 126);
+body{
+  background-image: url('https://thumbs.dreamstime.com/b/casino-chips-concept-glowing-neon-blue-lights-black-background-casino-chips-concept-glowing-neon-blue-lights-143231812.jpg');
+  background-attachment: fixed;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-} 
-.first{
-  
-  background-color: grey;
+}
+.game-body{
+  height:25rem;
+  width:30rem;
+  background: radial-gradient( navy, rgb(22, 123, 255));
   display: flex;
-  
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100vh;
-  min-height: 10vh;
-  border-radius: 50px;
+  border-radius: 10px;
+  border: 3px silver solid;
 }
-.item1 , .item2, .item3{
+.button-container{
+  background-color: navy;
+  width: 30rem;
+  height: 3rem;
   display: flex;
-  min-height: 1vh;
-  min-width: 15vh;
-  border-radius: 15px;
-  align-items: baseline;
-  font-size: 200px ;
-  margin: 0 auto;
-  
+  justify-content: space-around;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: gold 2px solid;
 }
-
-.silder{
-  min-height:60vh;
-  min-width: 5vh;
-  background-color: white;
-  margin-right: 10vh;
-  border-end-end-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-
-
-.first{
-  
-  background-color: grey;
-  display: grid;
+.display-container{
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
-  width: 100vh;
-  min-height: 55vh;
-  grid-template-columns: 50px 50px 50px ;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      "header header header header"
-      "main main . sidebar"
-      "footer footer footer footer";
-}  
-.messages{
-
-  font-size:56
+  width: 29rem;
+}
+.display-box-1, .display-box-2 , .display-box-3{
+  height:10rem;
+  width:8rem;
+  border-radius: 10px;
+  border: 3px silver solid;
+  background: radial-gradient(white, rgb(97, 97, 97));
+  text-align: center;
+  padding-top: 45px;
+  font-size: 100px;
+  font-family: 'Dancing Script', cursive;
+}
+.display-box-1{
+  
+}
+.display-box-2{
+  
+}
+.display-box-3{
+  
+}
+.message-div{
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: gold;
+  background-color: navy;
+  width: 30rem;
+  height: 3rem;;
+  /* margin-top: -1rem; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  border: 3px silver solid;
+  border-bottom: gold 2px solid
+}
+.button-container > button {
+  width: 6rem;
+  height: 3rem;
+  border: solid rgb(22, 123, 255) 2px;
+  border-radius: 15px;
+  background-color: silver;
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+}
+.button-container > button:hover{
+  width: 8rem;
+  height: 4rem;
+  margin-top: -5px;
+  border: solid silver 4px;
+  background-color: gold;
+  font-size: 22px;
+  transition: .3s;
+}
+.display-box-1:hover, .display-box-2:hover , .display-box-3:hover{
+  background: rgb(0, 0, 255);
+  border: solid gold 3px;
+  transition: .25s;
+  color:gold;
+}
+.watermellon-img{
+  width: 8rem;
+}
+.seven{
+  width: 8rem;
+  margin-top: -2.25rem;
+  border-radius: 15px;
+}
+.cherries{
+  width: 8rem;
+}
+.invisable{
+  opacity:0;
 }
