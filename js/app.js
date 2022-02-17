@@ -8,29 +8,16 @@ const reset =document.querySelector('.reset-btn')
 console.log(message,item1,item2,item3,playButton);
 
 function ranNumber(){
-  // This random number picks a number bettewn 1 and4 
   let months = ["🍒", "🍉","7️⃣","⬛️"];
   return  Math.floor(Math.random() * months.length);
-    
-
 } 
-  console.log(ranNumber());
-
-
 playButton.addEventListener('click',()=>{
-
-
   let randomNumber = ranNumber()
   let randomNumber2 = ranNumber()
   let randomNumber3 = ranNumber()
-  
   let firstNumber = setTimeout(()=>{item1.innerHTML = `${randomNumber}`},500);
-  
   let secondNumber = setTimeout(()=>{item2.innerHTML = `${randomNumber2}`},1000);
-  
   let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},1500);
-  
-  
   if(randomNumber === randomNumber2 && randomNumber === randomNumber3){
   setTimeout(()=>{ message.innerHTML= 'you won' }, 1600)  
   } 
