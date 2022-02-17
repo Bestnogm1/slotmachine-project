@@ -4,6 +4,7 @@ const item1 = document.querySelector('.display-box-1')
 const item2 = document.querySelector('.display-box-2')
 const item3 = document.querySelector('.display-box-3')
 const playButton = document.querySelector('.play_button')
+const reset =document.querySelector('.reset-btn')
 console.log(message,item1,item2,item3,playButton);
 
 function ranNumber(){
@@ -35,4 +36,8 @@ playButton.addEventListener('click',()=>{
   } 
   else if(randomNumber !== randomNumber2 || randomNumber !== randomNumber3) {
     setTimeout(()=>{ message.innerHTML = 'you lost' }, 1600) }
+})
+
+reset.addEventListener('click',()=>{ 
+
 })
