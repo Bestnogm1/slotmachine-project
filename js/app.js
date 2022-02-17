@@ -4,7 +4,9 @@ const item1 = document.querySelector('.display-box-1')
 const item2 = document.querySelector('.display-box-2')
 const item3 = document.querySelector('.display-box-3')
 const playButton = document.querySelector('.play_button')
+const mode =document.querySelector('.dark-light-btn')
 const reset =document.querySelector('.reset-btn')
+
 console.log(message,item1,item2,item3,playButton);
 
 function ranNumber(){
@@ -30,4 +32,9 @@ message.innerHTML=''
 item1.innerHTML=''
 item2.innerHTML=''
 item3.innerHTML=''
+})
+
+mode.addEventListener('click',()=>{
+  
+
 })
