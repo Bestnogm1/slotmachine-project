@@ -26,5 +26,8 @@ playButton.addEventListener('click',()=>{
 })
 
 reset.addEventListener('click',()=>{ 
-
+message.innerHTML=''
+item1.innerHTML=''
+item2.innerHTML=''
+item3.innerHTML=''
 })
