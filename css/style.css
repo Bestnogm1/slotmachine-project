@@ -1,4 +1,4 @@
-body{
+body.dark{
   background-image: url('https://thumbs.dreamstime.com/b/casino-chips-concept-glowing-neon-blue-lights-black-background-casino-chips-concept-glowing-neon-blue-lights-143231812.jpg');
   background-attachment: fixed;
   height: 100%;
@@ -9,6 +9,19 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+body.light{
+  background:linear-gradient(blue,purple);
+  background-attachment: fixed;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 .game-body{
   height:25rem;
   width:30rem;
