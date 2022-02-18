@@ -37,7 +37,7 @@ Slot machine original name the liberty bell
 legend goes “the slot machine was first invented in 1894 in san Francisco by charles fey
 It was originally 7 years before  after the first coding languages and no they ddint have math.random() to get a random display they had 3 metal hoops called reels.
 
-Picture:![alt text](images/ll.jpeg)
+Picture:![alt text](images/cherry.jpg)
 
 
 For this project I use
