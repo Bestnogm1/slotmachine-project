@@ -1,6 +1,6 @@
 
 const message = document.querySelector('.message')
-let item1 = document.querySelector('.display-box-1')
+const item1 = document.querySelector('.display-box-1')
 const item2 = document.querySelector('.display-box-2')
 const item3 = document.querySelector('.display-box-3')
 const playButton = document.querySelector('.play_button')
@@ -10,9 +10,10 @@ const body = document.querySelector('body')
 const gameBody = document.querySelector('.game-body')
 
 let lose = new Audio("audio/Aww Sound Effect.mp3");
-let win = new Audio("audio/winner.wav"); // buffers automatically when created
-let spinning = new Audio("audio/spinning.wav"); // buffers automatically when created
-  let emojis = ["🍒", "🍉","7️⃣","⬛️"];
+let win = new Audio("audio/winner.wav"); 
+let spinning = new Audio("audio/spinning.wav"); 
+let emojis = ["🍒", "🍉","7️⃣","⬛️"];
+
 function ranNumber(){
   return  emojis[ Math.floor(Math.random() * emojis.length)];
 } 
@@ -38,10 +39,10 @@ playButton.addEventListener('click',()=>{
 })
 
 reset.addEventListener('click',()=>{ 
-message.innerHTM = ''
-item1.innerHTML = ''
-item2.innerHTML = ''
-item3.innerHTML = ''
+  message.innerHTM = ''
+  item1.innerHTML = ''
+  item2.innerHTML = ''
+  item3.innerHTML = ''
 })
 
 mode.addEventListener('click', function lightMode(){
@@ -50,14 +51,12 @@ mode.addEventListener('click', function lightMode(){
     body.classList.add('light')
     reset.classList.toggle("dark-mode")
     gameBody.classList.toggle("gameBody")
-    mode.innerHTML ='dark mode'
-
+    mode.innerHTML = 'dark mode'
   } else{
     body.classList.remove("light")
     body.classList.add("dark")
     reset.classList.toggle("dark-mode")
     gameBody.classList.remove("gameBody")
-    mode.innerHTML ='light mode'
+    mode.innerHTML = 'light mode'
   }
-  
 })
