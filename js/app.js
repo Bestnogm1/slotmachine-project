@@ -27,13 +27,14 @@ playButton.addEventListener('click',()=>{
   let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},1500);
 
   if(randomNumber === randomNumber2 && randomNumber === randomNumber3){
-  setTimeout(()=>{ message.innerHTML= 'you won'}, 1600) 
+  setTimeout(()=>{ message.innerHTML= 'you won!!'}, 1600) 
   setTimeout(()=>{win.play()}, 1650) 
 
   } 
   else if(randomNumber !== randomNumber2 || randomNumber !== randomNumber3) {
     setTimeout(()=>{ message.innerHTML = ' Try again!' }, 1600) 
     setTimeout(()=>{lose.play()}, 1650)}
+    message.innerHTML= 'Slot Machine'
 })
 
 reset.addEventListener('click',()=>{ 
@@ -48,10 +49,15 @@ mode.addEventListener('click', function lightMode(){
     body.classList.remove("dark")
     body.classList.add('light')
     reset.classList.toggle("dark-mode")
+    gameBody.classList.toggle("gameBody")
+    mode.innerHTML ='dark mode'
+
   } else{
     body.classList.remove("light")
     body.classList.add("dark")
     reset.classList.toggle("dark-mode")
+    gameBody.classList.remove("gameBody")
+    mode.innerHTML ='light mode'
   }
   
 })

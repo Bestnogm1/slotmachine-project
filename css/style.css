@@ -97,21 +97,10 @@ body.light{
   border: solid gold 3px;
   transition: .25s;
   color:gold;
+   opacity: 1;
 }
-.watermellon-img{
-  width: 8rem;
-}
-.seven{
-  width: 8rem;
-  margin-top: -2.25rem;
-  border-radius: 15px;
-}
-.cherries{
-  width: 8rem;
-}
-.invisable{
-  opacity:0;
-}
+
+
 .message{
   border-radius: 10px;
   /* border-style: solid; */
@@ -120,4 +109,7 @@ body.light{
   /* text-align: center; */
   font-size: 50px;
   font-family: 'Dancing Script', cursive;
+}
+.gameBody{
+  background: radial-gradient(rgb(222, 128, 230), rgb(159, 101, 147));
 }
