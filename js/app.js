@@ -22,15 +22,14 @@ playButton.addEventListener('click',()=>{
   let randomNumber = ranNumber()
   let randomNumber2 = ranNumber()
   let randomNumber3 = ranNumber()
-
+  
   let firstNumber = setTimeout(()=>{item1.innerHTML = `${randomNumber}`},500);
   let secondNumber = setTimeout(()=>{item2.innerHTML = `${randomNumber2}`},1000);
   let thirdNumber = setTimeout(()=>{item3.innerHTML = `${randomNumber3}`},1500);
-
+  
   if(randomNumber === randomNumber2 && randomNumber === randomNumber3){
-  setTimeout(()=>{ message.innerHTML= 'you won!!'}, 1600) 
-  setTimeout(()=>{win.play()}, 1650) 
-
+    setTimeout(()=>{ message.innerHTML= 'you won!!'}, 1600) 
+    setTimeout(()=>{win.play()}, 1650) 
   } 
   else if(randomNumber !== randomNumber2 || randomNumber !== randomNumber3) {
     setTimeout(()=>{ message.innerHTML = ' Try again!' }, 1600) 
