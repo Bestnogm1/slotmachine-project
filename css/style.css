@@ -11,7 +11,7 @@ body.dark{
 }
 
 body.light{
-  background:linear-gradient(blue,purple);
+  background:linear-gradient(rgb(97, 97, 198),purple);
   background-attachment: fixed;
   height: 100%;
   background-size: cover;
