@@ -12,7 +12,7 @@ const gameBody = document.querySelector('.game-body')
 let lose = new Audio("audio/Aww Sound Effect.mp3");
 let win = new Audio("audio/winner.wav"); 
 let spinning = new Audio("audio/spinning.wav"); 
-let emojis = ["🍒"];
+let emojis = ["🍒", "🍉","7️⃣","⬛️"];
 
 function ranNumber(){
   return  emojis[ Math.floor(Math.random() * emojis.length)];
