@@ -33,6 +33,7 @@ body.light {
   border-radius: 10px;
   border: 3px silver solid;
 }
+
 .button-container {
   background-color: navy;
   width: 30rem;
@@ -43,12 +44,14 @@ body.light {
   border-bottom-right-radius: 10px;
   border-top: gold 2px solid;
 }
+
 .display-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 29rem;
 }
+
 .display-box-1, .display-box-2 , .display-box-3 {
   height:10rem;
   width:8rem;
@@ -60,6 +63,7 @@ body.light {
   font-size: 100px;
   font-family: 'Dancing Script', cursive;
 }
+
 .message-div {
   font-family: 'Lobster', cursive;
   font-size: 70px;
@@ -73,6 +77,7 @@ body.light {
   border: 3px silver solid;
   border-bottom: gold 2px solid
 }
+
 .button-container > button {
   width: 6rem;
   height: 3rem;
@@ -82,6 +87,7 @@ body.light {
   font-family: 'Lobster', cursive;
   font-size: 18px;
 }
+
 .button-container > button:hover {
   width: 8rem;
   height: 4rem;
@@ -91,6 +97,7 @@ body.light {
   font-size: 22px;
   transition: .3s;
 }
+
 .display-box-1:hover, .display-box-2:hover , .display-box-3:hover {
   background: rgb(0, 0, 255);
   border: solid gold 3px;
@@ -106,6 +113,7 @@ body.light {
   font-size: 50px;
   font-family: 'Dancing Script', cursive;
 }
+
 .gameBody {
   background: radial-gradient(rgb(222, 128, 230), rgb(159, 101, 147));
 }
