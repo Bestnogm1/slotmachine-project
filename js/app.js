@@ -17,23 +17,24 @@ let emojis = [ "🍒", "🍉", "7️⃣", "⬛️" ]
 function ranNumber() {
   return emojis[ Math.floor(Math.random() * emojis.length) ]
 } 
-playButton.addEventListener('click', () => {
+
+playButton.addEventListener( 'click', () => {
   spinning.play()
   let randomNumber = ranNumber()
   let randomNumber2 = ranNumber()
   let randomNumber3 = ranNumber()
   
-  let firstNumber = setTimeout( () => { item1.innerHTML = `${ randomNumber }`  }, 500);
-  let secondNumber = setTimeout( () => { item2.innerHTML = `${ randomNumber2}` }, 1000);
-  let thirdNumber = setTimeout( () => { item3.innerHTML = `${ randomNumber3 }` }, 1500);
+  let firstNumber = setTimeout(() => { item1.innerHTML = `${ randomNumber }`  }, 500);
+  let secondNumber = setTimeout(() => { item2.innerHTML = `${ randomNumber2}` }, 1000);
+  let thirdNumber = setTimeout(() => { item3.innerHTML = `${ randomNumber3 }` }, 1500);
   
   if( randomNumber === randomNumber2 && randomNumber === randomNumber3 ) {
-    setTimeout(() => { message.innerHTML= 'you won!!' }, 1600 )
+    setTimeout(() => { message.innerHTML= 'You won!!' }, 1600 )
     setTimeout(() => { win.play() }, 1650 ) ; 
   } 
   else if( randomNumber !== randomNumber2 || randomNumber !== randomNumber3 ) {
-    setTimeout(() => { message.innerHTML = ' Try again!' }, 1600)
-    setTimeout(() => {lose.play()}, 1650) 
+    setTimeout(() => { message.innerHTML = 'Try again!' }, 1600 )
+    setTimeout(() => { lose.play() }, 1650 ) 
   }
     message.innerHTML= 'Slot Machine'
 })
