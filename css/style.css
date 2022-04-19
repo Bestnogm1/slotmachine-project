@@ -1,4 +1,4 @@
-body.dark{
+body.dark {
   background-image: url('https://thumbs.dreamstime.com/b/casino-chips-concept-glowing-neon-blue-lights-black-background-casino-chips-concept-glowing-neon-blue-lights-143231812.jpg');
   background-attachment: fixed;
   height: 100%;
@@ -10,7 +10,7 @@ body.dark{
   align-items: center;
 }
 
-body.light{
+body.light {
   background:linear-gradient(rgb(97, 97, 198),purple);
   background-attachment: fixed;
   height: 100%;
@@ -22,7 +22,7 @@ body.light{
   align-items: center;
 }
 
-.game-body{
+.game-body {
   height:25rem;
   width:30rem;
   background: radial-gradient( navy, rgb(22, 123, 255));
@@ -33,7 +33,7 @@ body.light{
   border-radius: 10px;
   border: 3px silver solid;
 }
-.button-container{
+.button-container {
   background-color: navy;
   width: 30rem;
   height: 3rem;
@@ -43,13 +43,13 @@ body.light{
   border-bottom-right-radius: 10px;
   border-top: gold 2px solid;
 }
-.display-container{
+.display-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 29rem;
 }
-.display-box-1, .display-box-2 , .display-box-3{
+.display-box-1, .display-box-2 , .display-box-3 {
   height:10rem;
   width:8rem;
   border-radius: 10px;
@@ -60,7 +60,7 @@ body.light{
   font-size: 100px;
   font-family: 'Dancing Script', cursive;
 }
-.message-div{
+.message-div {
   font-family: 'Lobster', cursive;
   font-size: 70px;
   color: gold;
@@ -82,7 +82,7 @@ body.light{
   font-family: 'Lobster', cursive;
   font-size: 18px;
 }
-.button-container > button:hover{
+.button-container > button:hover {
   width: 8rem;
   height: 4rem;
   margin-top: -5px;
@@ -91,7 +91,7 @@ body.light{
   font-size: 22px;
   transition: .3s;
 }
-.display-box-1:hover, .display-box-2:hover , .display-box-3:hover{
+.display-box-1:hover, .display-box-2:hover , .display-box-3:hover {
   background: rgb(0, 0, 255);
   border: solid gold 3px;
   transition: .25s;
@@ -99,13 +99,13 @@ body.light{
   opacity: 9;
 }
 
-.message{
+.message {
   border-radius: 10px;
   font-size:50px;
   background: radial-gradient(white, rgb(97, 97, 97));
   font-size: 50px;
   font-family: 'Dancing Script', cursive;
 }
-.gameBody{
+.gameBody {
   background: radial-gradient(rgb(222, 128, 230), rgb(159, 101, 147));
 }
